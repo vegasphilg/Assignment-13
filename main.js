@@ -6,12 +6,7 @@ $.ajax({
   url: formURL,
   dataType: 'json',
   method: 'get'
-<<<<<<< HEAD
-}).then (function (response) {
-
-});
-
-=======
+  
 }).then (function (formData) {
 
 
@@ -29,4 +24,3 @@ $("#main").html
     
   });  
 });//Closes Document Ready
->>>>>>> afa93761942c6d24a529bb6415dcf13cd240790f
