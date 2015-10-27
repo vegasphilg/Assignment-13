@@ -8,15 +8,22 @@
 
 </head>
 <body>
-
-
-		<form id="main"></form>
-
-
-
-
-
-
+<div id="container">
+   
+    <div id="header">
+        <h1>Sign Up For My Web App</h1>
+    </div>
+    
+    <div id="formDiv">
+       <form id="main">
+           <p>kdkdkdkd</p>
+       </form>
+    </div>
+    
+    <div id="footer">
+        <button id="submitBtn">Submit Form</button>
+    </div>
+		
 
 
 
@@ -26,44 +33,46 @@
 	<script src="main.js" type="text/javascript"></script>
 
 	<script  type="x-tpml-mustache" id="formTemplate"></script>
+	
+	
 
 		{{#user-first-name}}
-			<input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /> 
+    <p><input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /></p>
 		{{/user-first-name}}
 
 
 		{{#user-last name}}
-			<input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /> 
+    <p><input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /></p>
 		{{/user-last-name}}
 
 
 		{{#user-email}}
-			<input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /> 
+    <p><input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /></p>
 		{{/user-email}}
 
 
 		{{#user-website}}
-			<input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /> 
+    <p><input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /></p> 
 		{{/user-website}}
 
 
 		{{#user-language}}
-			<input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /> 
+    <p><input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /></p> 
 		{{/user-language}}
 
 
 		{{#user-comment}}
-			<input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /> 
+    <p><input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /></p> 
 		{{/user-comment}}
 
 
 		{{#user-mobile}}
-			<input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /> 
+    <p><input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /></p> 
 		{{/user-mobile}}
 
 
 		{{#user-phone}}
-			<input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /> 
+    <p><input type="text" placeholder="{{#icon}}{{/icon}} {{#label}} {{/label}}" /></p> 
 		{{/user-phone}}
 
 
@@ -72,13 +81,9 @@
 		
 	<textarea>{{textarea}}</textarea>
 			
-	
-	<input>
-		
-			{{.}}
-		{{/name}}
-	</input>
 
 
+
+    </div><!--closese container-->
 </body>
 </html>

@@ -1,0 +1,26 @@
+#container {
+    width: 536px;
+    height: 662px;
+    margin: 2em 0 0 2em;
+    border: 5px solid rgb(203, 203, 203);
+}
+
+#header {
+    background-color: rgb(62, 138, 204);
+    color: white;
+    padding: 1em;
+}
+
+#submitBtn {
+    background-color: rgb(62, 138, 204);
+    color: white;
+}
+
+#footer {
+    background-color: rgb(200, 222, 241);
+    padding: 2em;
+}
+
+#formDiv {
+    padding: 1em;
+}

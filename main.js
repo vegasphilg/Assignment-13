@@ -8,21 +8,13 @@ $.ajax({
   method: 'get'
   
 }).then (function (formData) {
-	
 	fa-user: formData.fa-user,
 	user-first-name:formData.user-first-name,
-	user-last-name: formData.user-last-name,
-	
+	user-last-name: formData.user-last-name
 
-
-
-	
-
-
-    
-  
-var fetchedData = {
-   data: formData
+    var fetchedData = {
+        data: formData
+    };
 });
     
 var formTemplate = $("#formTemplate").text();
@@ -31,5 +23,5 @@ $("#main").html(newArrayhtml),
 
     
     
-  });  
+  
 });//Closes Document Ready
