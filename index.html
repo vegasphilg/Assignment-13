@@ -26,15 +26,32 @@
 	<script src="main.js" type="text/javascript"></script>
 
 	<script  type="x-tpml-mustache" id="formTemplate"></script>
-		
-	<input> 
-		{{#name}}
-		{{type}}
-		{{label}}
-		{{id}}
-		{{icon}}
-		{{options}}
-          </input>
+		{{#user-first-name}}
+		<input/>
+		{{/user-first-name}}
+		{{#user-last name}}
+		<input/>
+		{{/user-last-name}}
+		{{#user-email}}
+		<input/>
+		{{/user-email}}
+		{{#user-website}}
+		<input/>
+		{{/user-website}}
+		{{#user-language}}
+		<input/>
+		{{/user-language}}
+		{{#user-comment}}
+		<input/>
+		{{/user-comment}}
+		{{#user-mobile}}
+		<input/>
+		{{/user-mobile}}
+		{{#user-phone}}
+		<input/>
+		{{/user-phone}}
+
+
 			
 	<option>{{option}}</option>
 		

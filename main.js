@@ -1,18 +1,18 @@
 $(document).ready(function(){
 
-var formURL = 'http://json-data.herokuapp.com/forms';
+var formData = 'http://json-data.herokuapp.com/forms';
 
 $.ajax({
   url: formURL,
   dataType: 'json',
   method: 'get'
-}).then (function (response) {
-  console.log(response);
-});
+}).then (function (formData) {
+
+
     
   
-var newArray {
-    
+var newArray = {
+   data: formData
 };
     
 var ; $("#formTemplate").text();
@@ -21,5 +21,5 @@ $("#main").html
 
     
     
-    
+  });  
 });//Closes Document Ready
