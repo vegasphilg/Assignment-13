@@ -1,15 +1,16 @@
 $(document).ready(function(){
 
-
+var dataURL = 'http://json-data.herokuapp.com/forms';
 
   $.ajax({
-  url:'http://json-data.herokuapp.com/forms',
+  url:dataURL,
+  method: 'get',
   dataType: 'json',
-  method: 'get'})
-  	.then (function (formData) {
+ 
+ }).then (function (formData) {
 
     var fetchedData = {
-        data: formData
+        formData: formData
     };
 
      var formTemplate = $("#formTemplate").text();
