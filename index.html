@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
@@ -16,7 +17,7 @@
     
     <div id="formDiv">
        <form id="main">
-           <p>kdkdkdkd</p>
+        
        </form>
     </div>
     
@@ -24,6 +25,7 @@
         <button id="submitBtn">Submit Form</button>
     </div>
 		
+
 
 
 
@@ -47,31 +49,14 @@
    	 
    	 {{/options.length}}
    	 	{{^options}}
-   	 		<input class="userInput" type="{{type}}" placeholder="{{label}}"/>
+   	 		<span class="fa {{icon}} icon"</span>  
+        <input class="formWidth" type="{{type}}" placeholder="{{label}}" id="{{id}}" icon="{{icon}}" options="{{options}}" />
    	 	{{/options}}
-
-
-
 
     {{/formData}}
 
-
-
     </form>
-
-
-
-
-    
-   
-
     </script>
-
-
-	
-			
-
-
 
     </div><!--closese container-->
 </body>
