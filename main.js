@@ -1,27 +1,25 @@
 $(document).ready(function(){
 
-var formData = 'http://json-data.herokuapp.com/forms';
 
-$.ajax({
-  url: formURL,
+
+  $.ajax({
+  url:'http://json-data.herokuapp.com/forms',
   dataType: 'json',
-  method: 'get'
-  
-}).then (function (formData) {
-	fa-user: formData.fa-user,
-	user-first-name:formData.user-first-name,
-	user-last-name: formData.user-last-name
+  method: 'get'})
+  	.then (function (formData) {
 
     var fetchedData = {
         data: formData
     };
-});
+
+     var formTemplate = $("#formTemplate").text();
+	 var newArrayhtml = Mustache.render(formTemplate, fetchedData);
+	 $("#main").html(newArrayhtml);
+	
+	});
     
-var formTemplate = $("#formTemplate").text();
-var newArrayhtml = Mustache.render(formTemplate , fetchedData);
-$("#main").html(newArrayhtml),
+
 
     
     
-  
-});//Closes Document Ready
+ });//Closes Document Ready
