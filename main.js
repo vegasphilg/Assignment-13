@@ -5,7 +5,7 @@ var dataURL = 'http://json-data.herokuapp.com/forms';
   $.ajax({
   url:dataURL,
   method: 'get',
-  dataType: 'json',
+  dataType: 'json'
  
  }).then (function (formData) {
 

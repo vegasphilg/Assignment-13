@@ -35,14 +35,39 @@
     <script  type="x-tpml-mustache" id="formTemplate">
     <form>
     {{#formData}}
-   	 <input type="{{type}}" placeholder="{{label}}"/>
+
+
+		{{#options.length}}
+		<select class="userOption">
+			<option>{{label}}</option>
+			{{#options}}
+				<option value="{{value}}">{{label}}</option>
+			{{/options}}
+		</select>
+   	 
+   	 {{/options.length}}
+   	 	{{^options}}
+   	 		<input class="userInput" type="{{type}}" placeholder="{{label}}"/>
+   	 	{{/options}}
+
+
+
+
     {{/formData}}
+
+
+
     </form>
+
+
+
+
+    
+   
+
     </script>
 
 
-	</script>
-	
 	
 			
 
